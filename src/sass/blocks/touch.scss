@@ -1,0 +1,95 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.touch {
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__form {
+    font-size: 14px;
+    line-height: 2;
+    color: $color-dark;
+  }
+
+  &__input-block {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__input,
+  &__textarea {
+    padding: 9px 15px;
+    width: 100%;
+    border: 1px solid #e2e1e5;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: outline .3s, border-color .3s;
+
+    &:focus {
+      outline: 1px solid $color-ui-error;
+      border-color: transparent;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        outline: transparent;
+        border-color: $color-dark;
+      }
+    }
+
+    &:active {
+      outline: transparent;
+      border-color: $color-dark;
+    }
+
+    &::placeholder {
+      color: $color-ui-disabled;
+    }
+  }
+
+  &__textarea {
+    height: 132px;
+  }
+
+  &__checkbox {
+    display: flex;
+    text-align: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__checkbox-link {
+    color: #a22dc6;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__img {
+      display: block;
+      width: 550px;
+      height: 342px;
+      object-fit: cover;
+      box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    &__img {
+      width: 573px;
+      height: 356px;
+    }
+  }
+}

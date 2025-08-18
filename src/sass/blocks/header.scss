@@ -1,0 +1,109 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.header {
+  padding-top: 50px;
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 15px;
+
+    a {
+      display: block;
+      color: $color-dark;
+
+      span {
+        width: 20px;
+        height: 20px;
+
+        font-size: 20px;
+
+        &::before {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: none;
+  }
+}
+
+.burger {
+  padding-right: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  span {
+    width: 20px;
+    height: 1px;
+    background-color: $color-dark;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__nav {
+      display: block;
+      margin-top: 20px;
+    }
+
+    &__list {
+      display: flex;
+      column-gap: 30px;
+      justify-content: center;
+    }
+
+    &__link {
+      font-size: 20px;
+      text-transform: uppercase;
+      transition: all .3s ease-in;
+
+      @media (any-hover: hover) {
+        &:hover {
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    padding-top: 40px;
+    
+    &__nav {
+      margin-top: 36px;
+    }
+
+    &__list {
+      gap: 60px;
+    }
+
+    &__logo {
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}

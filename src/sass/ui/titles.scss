@@ -1,0 +1,39 @@
+@use '/src/sass/base/mixins.scss';
+
+.title-1-italic {
+  @extend %title;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.title-2 {
+  @extend %title;
+  font-size: 32px;
+}
+
+.title-3 {
+  @extend %title;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-2 {
+    font-size: 36px;
+  }
+  .title-3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) { 
+  .title-2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .title-1-italic {
+    font-size: 32px;
+  }
+}
