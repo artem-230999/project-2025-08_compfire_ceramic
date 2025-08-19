@@ -20,6 +20,7 @@ close.addEventListener('click', () => {
   document.body.style.overflow = '';
 });
 
+
 try {
 	new Swiper(".works__slider", {
 		slidesPerView: 1,
@@ -44,4 +45,25 @@ try {
 		},
 		modules: [Navigation, Pagination],
 	});
+} catch (e) {}
+
+
+try {
+	const tabs = document.querySelectorAll(".catalog__btn");
+	const contents = document.querySelectorAll(".catalog__content-item");
+
+	tabs.forEach((tab, index) => {
+		tab.addEventListener("click", () => {
+			// Удаляем активный класс у всех табов и контента
+			tabs.forEach((t) => t.classList.remove("catalog__btn_active"));
+			contents.forEach((c) => (c.style.display = "none"));
+
+			// Добавляем активный класс к нажатому табу и показываем соответствующий контент
+			tab.classList.add("catalog__btn_active");
+			contents[index].style.display = "flex";
+		});
+	});
+
+	// Показываем первый контент при загрузке
+	contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 } catch (e) {}
