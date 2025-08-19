@@ -70,10 +70,14 @@
 
   &__checkbox {
     margin-bottom: 20px;
-  }
 
-  &__checkbox-link {
-    color: #a22dc6;
+    input {
+      &:checked {        
+        &::after {
+          color: $color-dark;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {

@@ -44,6 +44,14 @@
 
   &__checkbox {
     margin-bottom: 20px;
+    
+    input {
+      appearance: none;
+      border: 1px solid $color-light;
+      border-radius: 2px;
+      width: 15px;
+      height: 15px;
+    }
   }
 
   &__btn {
