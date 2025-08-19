@@ -1,7 +1,6 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .touch {
-
   &__title {
     margin-bottom: 60px;
   }
@@ -24,6 +23,10 @@
     &:last-child {
       margin-bottom: 20px;
     }
+  }
+
+  &__input-block--mobile-none {
+    display: none;
   }
 
   &__label {
@@ -66,9 +69,6 @@
   }
 
   &__checkbox {
-    display: flex;
-    text-align: center;
-    column-gap: 15px;
     margin-bottom: 20px;
   }
 
@@ -76,7 +76,52 @@
     color: #a22dc6;
   }
 
+  @media screen and (min-width: 768px) {
+    &__title {
+      margin-bottom: 45px;
+    }
+
+    &__wrapper {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 85px;
+        height: 85px;
+        background-image: url('/src/img/form/vase.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &__input-block {
+      width: 300px;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
+    &__title {
+      margin-bottom: 80px;
+    }
+
+    &__wrapper {
+      row-gap: 40px;
+    }
+
+    &__col {
+      &:first-child {
+        padding-right: 20px;
+      }
+
+      &:last-child {
+        padding-left: 20px;
+      }
+    }
+
     &__img {
       display: block;
       width: 550px;
@@ -90,6 +135,40 @@
     &__img {
       width: 573px;
       height: 356px;
+    }
+
+    &__wrapper {
+      column-gap: 147px;
+
+      &::before {
+        right: 75px;
+      }
+    }
+
+    &__col {
+      &:first-child {
+        width: 573px;
+        padding-right: 0;
+      }
+
+      &:last-child {
+        width: 645px;
+        padding-left: 0;
+      }
+    }
+
+    &__form {
+      width: 100%;
+      display: flex;
+      column-gap: 45px;
+    }
+
+    &__input-block--mobile-none {
+      display: block;
+    }
+
+    &__input-block--desctop-none {
+      display: none;
     }
   }
 }

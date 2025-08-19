@@ -1,0 +1,120 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.footer {
+  padding: 50px 0;
+  color: $color-light;
+  background-color: $color-dark;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__descr {
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    width: 293px;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: inherit;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $color-ui-active;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      color: $color-ui-active;
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    padding: 5px;
+    width: 90px;
+    min-height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: inherit;
+    border: 1px solid $color-light;
+    border-radius: 2px;
+  }
+  
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 66px;
+    row-gap: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__social-list {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__icon {
+    display: block;
+    font-size: 24px;
+    line-height: 1;
+    
+    &::before {
+      margin: 0;
+    }
+  }
+
+  &__copy {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__inner {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__inner {
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    padding: 80px 0 52px;
+
+    &__inner {
+      margin-bottom: 20px;
+    }
+  }
+}

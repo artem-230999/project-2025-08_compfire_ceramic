@@ -28,3 +28,33 @@
   }
 }
 
+.btn-send {
+  @include button;
+  width: 220px;
+  height: 40px;
+  font-size: 16px;
+
+  &:focus {
+    border: 1px solid transparent;
+    outline: 1px solid $color-ceramic;
+  }
+
+  &:disabled {
+    border: 1px solid $color-ui-disabled;
+    color: $color-ui-disabled;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    &:hover {
+      color: $color-ceramic;
+      border: 1px solid $color-ceramic;
+      outline: 1px solid transparent;
+    }
+    
+    &:active {
+      outline: 1px solid transparent;
+      color: $color-dark;
+      border: 1px solid $color-dark;
+    }
+  }
+}

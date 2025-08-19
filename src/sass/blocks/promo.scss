@@ -1,7 +1,6 @@
 @use '/src/sass/base/variables.scss' as *;
 
 .promo {
-  padding-bottom: 60px;
   text-align: center;
   position: relative;
 
@@ -77,8 +76,6 @@
   }
 
   @media screen and (min-width: 1920px) {
-    padding-top: 40px;
-
     &__potter {
       width: 640px;
       height: 900px;
