@@ -1,3 +1,130 @@
+@use '/src/sass/base/variables.scss' as *;
+
 .blog {
-  
+  padding-top: 60px;
+
+  @media screen and (min-width: 1920px) {
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 40px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+
+    @media screen and (min-width: 768px) {
+      padding: 25px 25px 0 25px;
+      justify-content: flex-start;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200px;
+        height: 200px;
+        border-top: 1px solid $color-dark;
+        border-left: 1px solid $color-dark;
+        background-color: transparent;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 50px;
+    }
+    @media screen and (min-width: 1920px) {
+      align-items: stretch;
+    }
+  }
+
+  &__item {
+    width: 340px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    background-color: $color-light;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 520px;
+    }
+    @media screen and (min-width: 1920px) {
+      max-width: 670px;
+      border: 1px solid $color-dark;
+    }
+  }
+
+  &__item-top {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__item-img {
+    object-fit: cover;
+    width: 340px;
+    height: 240px;
+
+    @media screen and (min-width: 768px) {
+      width: 335px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 260px;
+      height: 240px;
+    }
+    @media screen and (min-width: 1920px) {
+      width: 335px;
+    }
+  }
+
+  &__item-box {
+    padding: 25px 25px 0 25px;
+    border-right: 1px solid $color-dark;
+    border-left: 1px solid $color-dark;
+    
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-left: none;
+      border-top: 1px solid $color-dark;
+    }
+    @media screen and (min-width: 1920px) {
+      border: none;
+    }
+  }
+
+  &__item-title {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  &__item-text {
+    border: 1px solid $color-dark;
+    border-top: none;
+    padding: 25px;
+
+    @media screen and (min-width: 768px) {
+      padding: 15px 25px 25px;
+    }
+    @media screen and (min-width: 1920px) {
+      border: none;
+    }
+  }
 }

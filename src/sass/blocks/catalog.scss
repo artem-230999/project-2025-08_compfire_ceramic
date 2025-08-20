@@ -43,15 +43,15 @@
   }
 
   &__content-item {
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    position: relative;
-
-    @media screen and (min-width: 756px) {
+    
+    @media screen and (min-width: 768px) {
+      padding: 10px;
       justify-content: flex-start;
+      position: relative;
 
       &::before {
         content: '';

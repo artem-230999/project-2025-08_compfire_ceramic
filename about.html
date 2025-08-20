@@ -23,13 +23,13 @@
         <div class="header__menu-nav">
           <ul class="header__menu-list">
             <li>
-              <a class="header__menu-link" href="#!">catalog</a>
+              <a class="header__menu-link" href="catalog.html">catalog</a>
             </li>
             <li>
-              <a class="header__menu-link" href="#!">blog</a>
+              <a class="header__menu-link" href="blog.html">blog</a>
             </li>
             <li>
-              <a class="header__menu-link" href="#!">about</a>
+              <a class="header__menu-link" href="about.html">about</a>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@
           <span></span>
         </div>
 
-        <a class="header__logo" href="#!">
+        <a class="header__logo" href="/">
           <img src="/src/logo/logo.png" alt="logo">
         </a>
 
@@ -57,19 +57,105 @@
 
       <nav class="header__nav">
         <ul class="header__list">
-          <li><a class="header__link" href="#!">catalog</a></li>
-          <li><a class="header__link" href="#!">blog</a></li>
-          <li><a class="header__link" href="#!">about</a></li>
+          <li><a class="header__link" href="catalog.html">catalog</a></li>
+          <li><a class="header__link" href="blog.html">blog</a></li>
+          <li><a class="header__link" href="about.html">about</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main">
-    <div class="catalog">
+    <section class="about section">
       <div class="container">
 
+        <h1 class="about__title">where it all began</h1>
+
+        <div class="about__inner">
+          <img class="about__img" src="/src//img/about/crafts.jpg" alt="crafts image">
+
+          <div class="about__content">
+            <p>
+              Our small pottery workshop began as a simple passion project, rooted in a love for handmade artistry and
+              traditional craftsmanship. What started with a single wheel and a few lumps of clay has grown into a cozy
+              creative space where ideas take shape and stories are told through every piece. Inspired by timeless
+              techniques and the beauty of natural materials, we’ve built a place where both beginners and experienced
+              artists can come together, share their skills, and celebrate the art of pottery. Each creation reflects
+              our journey—shaped by hand, fired with care, and made to be cherished.
+            </p>
+            <p>
+              Over the years, our workshop has become more than just a place to create—it’s a community. Friends,
+              families, and curious visitors gather here to learn, connect, and experience the joy of working with clay.
+              From intimate masterclasses to collaborative projects, we believe in the power of handmade art to bring
+              people together and spark creativity in unexpected ways.
+            </p>
+            <p>
+              Every piece that leaves our studio carries a bit of our story, blending tradition with personal
+              expression. Whether it’s a simple cup or an intricate vase, our ceramics are crafted to be both beautiful
+              and functional, adding warmth and authenticity to any space.
+            </p>
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
+    <section class="touch section">
+      <div class="touch__container container">
+        <h2 class="touch__title title-2">get in touch</h2>
+
+        <div class="touch__wrapper pure-g">
+          <div class="touch__col pure-u-1 pure-u-xl-1-2">
+            <img class="touch__img" src="/src/img/form/tea.jpg" alt="tea img">
+          </div>
+
+          <div class="touch__col pure-u-1 pure-u-xl-1-2">
+            <form class="touch__form" action="#">
+              <fieldset class="touch__form-box">
+                <fieldset class="touch__input-block">
+                  <label class="touch__label" for="name">Name</label>
+                  <input required class="touch__input" type="text" name="name" id="name" placeholder="Name">
+                </fieldset>
+
+                <fieldset class="touch__input-block touch__input-block--desctop-none">
+                  <label class="touch__label" for="email">Email</label>
+                  <input required class="touch__input" type="email" name="email" id="email" placeholder="Email">
+                </fieldset>
+
+                <fieldset class="touch__input-block">
+                  <label class="touch__label" for="question">Your question</label>
+                  <textarea required class="touch__textarea" name="question" id="question"
+                    placeholder="Question"></textarea>
+                </fieldset>
+
+                <label class="touch__checkbox checkbox" for="checkbox">
+                  <input required type="checkbox" id="checkbox">
+                  <fieldset>
+                    I agree with the <a class="checkbox-link" href="#!">terms</a>
+                  </fieldset>
+                </label>
+
+                <button class="touch__btn btn-send" type="submit">send request</button>
+              </fieldset>
+
+              <fieldset class="touch__input-block touch__input-block--mobile-none">
+                <label class="touch__label" for="email">Email</label>
+                <input required class="touch__input" type="email" name="email" id="email" placeholder="Email">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="findus section">
+      <div class="container">
+        <h2 class="findus__title title-2">Find us</h2>
+
+        <div class="findus__map">
+          <iframe class="findus__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9935.140985530163!2d-73.95572764154764!3d40.73079033646094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593c58f8777d%3A0xe2215ac687bd7249!2sCLAY%20SPACE%20Ceramic%20Center!5e1!3m2!1suk!2scz!4v1755665405055!5m2!1suk!2scz"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -89,7 +175,7 @@
             <label class="footer__checkbox checkbox" for="checkbox2">
               <input required type="checkbox" id="checkbox2">
               <fieldset>
-                I agree with the <a class="touch__checkbox-link" href="#!">terms</a>
+                I agree with the <a class="checkbox-link" href="#!">terms</a>
               </fieldset>
             </label>
 
