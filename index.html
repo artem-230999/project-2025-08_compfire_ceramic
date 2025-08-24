@@ -147,7 +147,7 @@
                   <label class="touch__label" for="question">Your question</label>
                   <textarea required class="touch__textarea" name="question" id="question"
                     placeholder="Question"></textarea>
-                    <div class="error-message"></div>
+                  <div class="error-message"></div>
                 </fieldset>
 
                 <label class="touch__checkbox checkbox" for="checkbox">
@@ -162,8 +162,8 @@
               </fieldset>
 
               <fieldset class="touch__input-block touch__input-block--mobile-none">
-                <label class="touch__label" >Email</label>
-                <input required class="touch__input" type="email" name="email" id="email" placeholder="Email">
+                <label class="touch__label" for="email2">Email</label>
+                <input required class="touch__input" type="email" name="email" id="email2" placeholder="Email">
               </fieldset>
             </form>
           </div>
@@ -171,32 +171,32 @@
       </div>
     </section>
     <section class="works">
-			<div class="container">
-				<h2 class="title-2">check out our works</h2>
+      <div class="container">
+        <h2 class="title-2">check out our works</h2>
 
-				<div class="works__wrapper">
-					<div class="swiper works__slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<img src="/src/img/works/tea-1.jpg" alt="tea-1" />
-							</div>
-							<div class="swiper-slide">
-								<img src="/src/img/works/tea-2.jpg" alt="tea-2" />
-							</div>
-							<div class="swiper-slide">
-								<img src="/src/img/works/tea-3.jpg" alt="tea-3" />
-							</div>
-							<div class="swiper-slide">
-								<img src="/src/img/works/tea-2.jpg" alt="tea-3" />
-							</div>
-						</div>
-					</div>
-					<div class="swiper-pagination"></div>
-					<button class="icon-left-open works__slider-nav"></button>
-					<button class="icon-right-open works__slider-nav"></button>
-				</div>
-			</div>
-		</section>
+        <div class="works__wrapper">
+          <div class="swiper works__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-1.jpg" alt="tea-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-2.jpg" alt="tea-2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-3.jpg" alt="tea-3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-2.jpg" alt="tea-3" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <button class="icon-left-open works__slider-nav"></button>
+          <button class="icon-right-open works__slider-nav"></button>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -211,16 +211,18 @@
           </div>
 
           <form class="footer__form" action="#" id="form2">
-            <div class="error-message"></div>
-            <input class="footer__input" type="email" name="email" id="email2" placeholder="Enter your e-mail">
-            
+            <fieldset>
+              <input class="footer__input" type="email" name="email" id="email3" placeholder="Enter your e-mail">
+              <div class="error-message"></div>
+            </fieldset>
+
             <label class="footer__checkbox checkbox" for="checkbox2">
               <input required type="checkbox" id="checkbox2">
               <fieldset>
-                I agree with the <a class="checkbox-link" href="#!">terms</a>
+                I agree with the<a class="checkbox-link" href="#!">terms</a>
               </fieldset>
-              <div class="error-message"></div>
             </label>
+            <div class="checkbox-message"></div>
 
             <button class="footer__btn" type="submit">submit</button>
           </form>

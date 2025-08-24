@@ -99,6 +99,16 @@ try {
         errorMessage: 'Пожалуйста введите ваш email правильно'
       }
     ])
+    .addField('#email2', [
+      {
+        rule: 'required',
+        errorMessage: 'Пожалуйста введите ваш email'
+      },
+      {
+        rule: 'email',
+        errorMessage: 'Пожалуйста введите ваш email правильно'
+      }
+    ])
     .addField('#question', [
       {
         rule: 'required',
@@ -117,7 +127,21 @@ try {
     ], {
       errorsContainer: document.querySelector('#checkbox')
       .parentElement.parentElement.querySelector('.checkbox-error-message')
-    });
+    })
+    .onSuccess((event) => {
+			const form = event.currentTarget;
+			const formData = new FormData(form);
+
+			fetch("https://jsonplaceholder.typicode.com/posts", {
+				method: "POST",
+				body: formData,
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					console.log("Success", data);
+					form.reset();
+				});
+		});
 } catch (e) {}
 // Form
 
@@ -126,7 +150,7 @@ try {
     const validatorForm = new JustValidate('#form2');
 
   validatorForm
-  .addField('#email2', [
+  .addField('#email3', [
       {
         rule: 'required',
         errorMessage: 'Пожалуйста введите ваш email'
@@ -136,16 +160,17 @@ try {
         errorMessage: 'Пожалуйста введите ваш email правильно'
       }
     ], {
-      errorsContainer: document.querySelector('#email2')
-      .parentElement.querySelector('.error-message')
+      // errorsContainer: document.querySelector('#email2')
+      // .parentElement.querySelector('.error-message')
     })
     .addField('#checkbox2', [
       {
         rule: 'required',
       }
     ], {
-      errorsContainer: document.querySelector('#checkbox')
-      .parentElement.querySelector('.checkbox-error-message')
-    });
+      errorsContainer: document.querySelector('#checkbox2')
+      .parentElement.parentElement.querySelector('.checkbox-message')
+    }
+  );
 } catch (e) {}
 // Form2

@@ -26,6 +26,15 @@
 
   &__form {
     width: 293px;
+
+    .just-validate-error-field {
+      outline: 1px solid $color-ui-error;
+      border-color: transparent;
+    }
+    .checkbox-error-message {
+      font-size: 16px !important;
+      height: 20px !important;
+    }
   }
 
   &__input {
@@ -35,7 +44,6 @@
     color: inherit;
     padding-bottom: 14px;
     border-bottom: 1px solid $color-ui-active;
-    margin-bottom: 20px;
 
     &::placeholder {
       color: $color-ui-active;
@@ -43,7 +51,8 @@
   }
 
   &__checkbox {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
     
     input {
       appearance: none;
@@ -53,8 +62,9 @@
       height: 15px;
     }
   }
-
+  
   &__btn {
+    margin-top: 20px;
     padding: 5px;
     width: 90px;
     min-height: 40px;

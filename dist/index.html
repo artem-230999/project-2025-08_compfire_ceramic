@@ -12,17 +12,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
     rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/main-wmuigH1Z.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DMG94TVz.css">
+  <script type="module" crossorigin src="/assets/script-DF2aEYh2.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script-S2kerQqK.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <main class="main">
-      <section class="promo">
+  <main class="main">
+    <div class="wrapper">
+      <section class="promo section">
         <img class="promo__potter" src="/assets/potter-Dgq44G72.jpg" alt="potter image">
         <div class="container">
           <header class="header">
+            <div class="header__menu">
+              <div class="header__menu-close">
+              </div>
+              <div class="header__menu-nav">
+                <ul class="header__menu-list">
+                  <li>
+                    <a class="header__menu-link" href="catalog.html">catalog</a>
+                  </li>
+                  <li>
+                    <a class="header__menu-link" href="blog.html">blog</a>
+                  </li>
+                  <li>
+                    <a class="header__menu-link" href="about.html">about</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="header__top">
               <div class="burger" aria-label="burger menu">
                 <span></span>
@@ -68,9 +85,197 @@
           </div>
         </div>
       </section>
-    </main>
-  </div>
+    </div>
+    <section class="activities section">
+      <div class="activities__container container">
+        <h2 class="activities__title title-2">
+          create or buy
+        </h2>
 
+        <div class="activities__wrapper pure-g">
+          <div class="activities__col pure-u-1 pure-u-xl-2-5">
+            <h3 class="activities__heading title-3">
+              our store
+            </h3>
+
+            <img class="activities__img" src="/assets/store-CVtOxCsN.jpg" alt="store">
+
+            <p class="activities__text">
+              Welcome to <span>Ceramic Soul</span>, where each piece tells a story of craftsmanship and creativity.
+              Our handmade ceramics are thoughtfully designed and carefully crafted, blending traditional techniques
+              with modern aesthetics. Whether you're looking for a unique gift or a special addition to your home, our
+              collection offers timeless pieces that bring warmth and authenticity to any space.
+            </p>
+          </div>
+          <div class="activities__col pure-u-1 pure-u-xl-3-5">
+            <h3 class="activities__heading title-3">
+              our workshop
+            </h3>
+
+            <img class="activities__img" src="/assets/ceramic-Bgx1feVJ.jpg" alt="ceramic">
+
+            <p class="activities__text">
+              At <span>Ceramic Soul</span> workshop, we don’t just craft ceramics—we invite you to get hands-on and
+              create your own unique pieces. Through our engaging masterclasses, you’ll learn traditional techniques,
+              work with natural materials, and experience the joy of shaping clay into something truly personal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="touch section">
+      <div class="touch__container container">
+        <h2 class="touch__title title-2">get in touch</h2>
+
+        <div class="touch__wrapper pure-g">
+          <div class="touch__col pure-u-1 pure-u-xl-1-2">
+            <img class="touch__img" src="/assets/tea-DeOr11j9.jpg" alt="tea img">
+          </div>
+
+          <div class="touch__col pure-u-1 pure-u-xl-1-2">
+            <form class="touch__form" action="#" id="form">
+              <fieldset class="touch__form-box">
+                <fieldset class="touch__input-block">
+                  <label class="touch__label" for="name">Name</label>
+                  <input required class="touch__input" type="text" name="name" id="name" placeholder="Name">
+                </fieldset>
+
+                <fieldset class="touch__input-block touch__input-block--desctop-none">
+                  <label class="touch__label" for="email">Email</label>
+                  <input required class="touch__input" type="email" name="email" id="email" placeholder="Email">
+                </fieldset>
+
+                <fieldset class="touch__input-block">
+                  <label class="touch__label" for="question">Your question</label>
+                  <textarea required class="touch__textarea" name="question" id="question"
+                    placeholder="Question"></textarea>
+                    <div class="error-message"></div>
+                </fieldset>
+
+                <label class="touch__checkbox checkbox" for="checkbox">
+                  <input required type="checkbox" id="checkbox">
+                  <fieldset>
+                    I agree with the <a class="checkbox-link" href="#!">terms</a>
+                  </fieldset>
+                  <div class="checkbox-error-message"></div>
+                </label>
+
+                <button class="touch__btn btn-send" type="submit">send request</button>
+              </fieldset>
+
+              <fieldset class="touch__input-block touch__input-block--mobile-none">
+                <label class="touch__label" for="email2">Email</label>
+                <input required class="touch__input" type="email" name="email" id="email2" placeholder="Email">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works">
+			<div class="container">
+				<h2 class="title-2">check out our works</h2>
+
+				<div class="works__wrapper">
+					<div class="swiper works__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="/assets/tea-1-vKMOH0_y.jpg" alt="tea-1" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/assets/tea-2-CiZGhhkc.jpg" alt="tea-2" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/assets/tea-3-ILJqlmY_.jpg" alt="tea-3" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/assets/tea-2-CiZGhhkc.jpg" alt="tea-3" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<button class="icon-left-open works__slider-nav"></button>
+					<button class="icon-right-open works__slider-nav"></button>
+				</div>
+			</div>
+		</section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__newsletter">
+          <h4 class="footer__title">
+            newsletter
+          </h4>
+
+          <div class="footer__descr">
+            Keep up to date with news and promotions
+          </div>
+
+          <form class="footer__form" action="#" id="form2">
+            <div class="error-message"></div>
+            <input class="footer__input" type="email" name="email" id="email3" placeholder="Enter your e-mail">
+            
+            <label class="footer__checkbox checkbox" for="checkbox2">
+              <input required type="checkbox" id="checkbox2">
+              <fieldset>
+                I agree with the<a class="checkbox-link" href="#!">terms</a>
+                <div class="error-message"></div>
+              </fieldset>
+            </label>
+
+            <button class="footer__btn" type="submit">submit</button>
+          </form>
+        </div>
+
+        <div class="footer__menu">
+          <div class="footer__menu-box">
+            <h4 class="footer__title">discover</h4>
+
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#!">About Us</a></li>
+              <li><a class="footer__link" href="#!">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-box">
+            <h4 class="footer__title">shopping</h4>
+
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#!">Catalog</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu-box">
+            <h4 class="footer__title">information</h4>
+
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#!">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__social">
+          <h4 class="footer__title">follow us</h4>
+
+          <ul class="footer__social-list">
+            <li>
+              <a href="#!"><span class="footer__icon icon-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#!"><span class="footer__icon icon-instagram"></span></a>
+            </li>
+            <li>
+              <a href="#!"><span class="footer__icon icon-pinterest-circled"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <small class="footer__copy">
+        © Copyright 2025, Ceramic soul
+      </small>
+    </div>
+  </footer>
+
 </body>
 
 </html>
