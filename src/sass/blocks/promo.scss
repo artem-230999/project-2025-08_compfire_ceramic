@@ -19,6 +19,12 @@
 
   &__cta {
     margin-top: 40px;
+    
+    // animation-name: slideIn;
+    // animation-duration: 1s;
+    animation: slideIn 1s;
+    // Пожно сделать зацикленую анимацию. Например стрелочку которая двигается вниз
+    // animation-iteration-count: infinite;
   }
 
   &__img {
@@ -98,3 +104,5 @@
     }
   }
 }
+
+

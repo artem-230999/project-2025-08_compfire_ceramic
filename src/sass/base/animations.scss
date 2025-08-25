@@ -1,0 +1,13 @@
+// https://animxyz.com/
+// https://motion.dev/
+// https://gsap.com/
+// https://threejs.org/
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
